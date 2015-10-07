@@ -19,11 +19,19 @@ class ViewController: UIViewController {
         
         
 
-        var score = PFObject(className: "score")
+        let score = PFObject(className: "Score")
+        score["FirstName"] = "Rob"
+        score.saveInBackgroundWithBlock{ (success : Bool, error : NSError?) -> Void in
+            print("Saved")
+        }
         
-        score.setObject("Rob", forKey: "name")
-        score.setObject(95, forKey: "number")
-        score.saveInBackground()
+        
+        
+        let testObject = PFObject(className: "TestObject")
+        testObject["foo"] = "bar"
+        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+            print("Object has been saved.")
+        }
         
     
     }
