@@ -7,257 +7,179 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1629E1381BC47CD600FCFA28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629E1371BC47CD600FCFA28 /* AppDelegate.swift */; };
-		1629E13A1BC47CD600FCFA28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629E1391BC47CD600FCFA28 /* ViewController.swift */; };
-		1629E13D1BC47CD600FCFA28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1629E13B1BC47CD600FCFA28 /* Main.storyboard */; };
-		1629E13F1BC47CD700FCFA28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1629E13E1BC47CD700FCFA28 /* Assets.xcassets */; };
-		1629E1421BC47CD700FCFA28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1629E1401BC47CD700FCFA28 /* LaunchScreen.storyboard */; };
-		1629E14D1BC47CD700FCFA28 /* CribTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629E14C1BC47CD700FCFA28 /* CribTests.swift */; };
-		1629E1581BC47CD700FCFA28 /* CribUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629E1571BC47CD700FCFA28 /* CribUITests.swift */; };
-		1629E1671BC47EF200FCFA28 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1629E1651BC47EF200FCFA28 /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
-		1629E1681BC47EF200FCFA28 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1629E1661BC47EF200FCFA28 /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
-		1629E16A1BC47F8500FCFA28 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1629E1691BC47F8500FCFA28 /* AudioToolbox.framework */; };
-		1629E16C1BC47F8B00FCFA28 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1629E16B1BC47F8B00FCFA28 /* CFNetwork.framework */; };
-		1629E16E1BC47F9400FCFA28 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1629E16D1BC47F9400FCFA28 /* CoreLocation.framework */; };
-		1629E1701BC47F9A00FCFA28 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1629E16F1BC47F9A00FCFA28 /* CoreGraphics.framework */; };
-		1629E1721BC47FC000FCFA28 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1629E1711BC47FC000FCFA28 /* libz.tbd */; };
-		1629E1741BC47FCE00FCFA28 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1629E1731BC47FCE00FCFA28 /* QuartzCore.framework */; };
-		1629E1761BC47FD900FCFA28 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1629E1751BC47FD900FCFA28 /* MobileCoreServices.framework */; };
-		1629E1781BC47FE400FCFA28 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1629E1771BC47FE400FCFA28 /* StoreKit.framework */; };
-		1629E17A1BC47FF400FCFA28 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1629E1791BC47FF400FCFA28 /* Security.framework */; };
-		1629E17C1BC4800D00FCFA28 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1629E17B1BC4800D00FCFA28 /* SystemConfiguration.framework */; };
-		1629E17F1BC480C100FCFA28 /* BridgeHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1629E17E1BC480C100FCFA28 /* BridgeHeader.m */; settings = {ASSET_TAGS = (); }; };
+		1666913E1BC49CD6002B447F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1666913D1BC49CD6002B447F /* CoreLocation.framework */; };
+		166691401BC49CE1002B447F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1666913F1BC49CE1002B447F /* CoreGraphics.framework */; };
+		166691421BC49CEA002B447F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 166691411BC49CEA002B447F /* CFNetwork.framework */; };
+		166691441BC49D0B002B447F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 166691431BC49D0B002B447F /* MobileCoreServices.framework */; };
+		166691461BC49D14002B447F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 166691451BC49D14002B447F /* QuartzCore.framework */; };
+		166691481BC49D1B002B447F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 166691471BC49D1B002B447F /* Security.framework */; };
+		1666914A1BC49D22002B447F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 166691491BC49D22002B447F /* StoreKit.framework */; };
+		814C3ACA1B69877600E307BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 814C3AC61B69877600E307BB /* Main.storyboard */; };
+		814C3ACB1B69877600E307BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814C3AC81B69877600E307BB /* Images.xcassets */; };
+		81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA814A1A49DA1800E65899 /* AppDelegate.swift */; };
+		81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA814C1A49DA1800E65899 /* ViewController.swift */; };
+		81BA81701A49DB6800E65899 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA816B1A49DB6800E65899 /* Bolts.framework */; };
+		81BA81711A49DB6800E65899 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA816C1A49DB6800E65899 /* Parse.framework */; };
+		81BA81771A49E0D500E65899 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA81761A49E0D500E65899 /* libsqlite3.dylib */; };
+		81BA81791A49E0DB00E65899 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA81781A49E0DB00E65899 /* AudioToolbox.framework */; };
+		81BA817B1A49E0E500E65899 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA817A1A49E0E500E65899 /* SystemConfiguration.framework */; };
+		81BA817F1A49E0F000E65899 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		1629E1491BC47CD700FCFA28 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1629E12C1BC47CD600FCFA28 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1629E1331BC47CD600FCFA28;
-			remoteInfo = Crib;
-		};
-		1629E1541BC47CD700FCFA28 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1629E12C1BC47CD600FCFA28 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1629E1331BC47CD600FCFA28;
-			remoteInfo = Crib;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		1629E1341BC47CD600FCFA28 /* Crib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crib.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1629E1371BC47CD600FCFA28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1629E1391BC47CD600FCFA28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1629E13C1BC47CD600FCFA28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1629E13E1BC47CD700FCFA28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1629E1411BC47CD700FCFA28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1629E1431BC47CD700FCFA28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1629E1481BC47CD700FCFA28 /* CribTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CribTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1629E14C1BC47CD700FCFA28 /* CribTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CribTests.swift; sourceTree = "<group>"; };
-		1629E14E1BC47CD700FCFA28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1629E1531BC47CD700FCFA28 /* CribUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CribUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1629E1571BC47CD700FCFA28 /* CribUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CribUITests.swift; sourceTree = "<group>"; };
-		1629E1591BC47CD700FCFA28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1629E1651BC47EF200FCFA28 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		1629E1661BC47EF200FCFA28 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		1629E1691BC47F8500FCFA28 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		1629E16B1BC47F8B00FCFA28 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		1629E16D1BC47F9400FCFA28 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		1629E16F1BC47F9A00FCFA28 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		1629E1711BC47FC000FCFA28 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		1629E1731BC47FCE00FCFA28 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		1629E1751BC47FD900FCFA28 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		1629E1771BC47FE400FCFA28 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		1629E1791BC47FF400FCFA28 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		1629E17B1BC4800D00FCFA28 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		1629E17D1BC480C000FCFA28 /* Crib-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Crib-Bridging-Header.h"; sourceTree = "<group>"; };
-		1629E17E1BC480C100FCFA28 /* BridgeHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BridgeHeader.m; sourceTree = "<group>"; };
+		1666913D1BC49CD6002B447F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1666913F1BC49CE1002B447F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		166691411BC49CEA002B447F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		166691431BC49D0B002B447F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		166691451BC49D14002B447F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		166691471BC49D1B002B447F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		166691491BC49D22002B447F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		814C3AC71B69877600E307BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		814C3AC81B69877600E307BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		814C3AC91B69877600E307BB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81BA81451A49DA1800E65899 /* Crib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crib.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81BA814A1A49DA1800E65899 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		81BA814C1A49DA1800E65899 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		81BA816B1A49DB6800E65899 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		81BA816C1A49DB6800E65899 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		81BA816D1A49DB6800E65899 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		81BA816E1A49DB6800E65899 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		81BA81761A49E0D500E65899 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		81BA81781A49E0DB00E65899 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		81BA817A1A49E0E500E65899 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
+		81BA81801A49E10C00E65899 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1629E1311BC47CD600FCFA28 /* Frameworks */ = {
+		81BA81421A49DA1800E65899 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1629E17C1BC4800D00FCFA28 /* SystemConfiguration.framework in Frameworks */,
-				1629E17A1BC47FF400FCFA28 /* Security.framework in Frameworks */,
-				1629E1781BC47FE400FCFA28 /* StoreKit.framework in Frameworks */,
-				1629E1761BC47FD900FCFA28 /* MobileCoreServices.framework in Frameworks */,
-				1629E1741BC47FCE00FCFA28 /* QuartzCore.framework in Frameworks */,
-				1629E1721BC47FC000FCFA28 /* libz.tbd in Frameworks */,
-				1629E1701BC47F9A00FCFA28 /* CoreGraphics.framework in Frameworks */,
-				1629E16E1BC47F9400FCFA28 /* CoreLocation.framework in Frameworks */,
-				1629E16C1BC47F8B00FCFA28 /* CFNetwork.framework in Frameworks */,
-				1629E16A1BC47F8500FCFA28 /* AudioToolbox.framework in Frameworks */,
-				1629E1681BC47EF200FCFA28 /* Parse.framework in Frameworks */,
-				1629E1671BC47EF200FCFA28 /* Bolts.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1629E1451BC47CD700FCFA28 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1629E1501BC47CD700FCFA28 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				1666914A1BC49D22002B447F /* StoreKit.framework in Frameworks */,
+				166691481BC49D1B002B447F /* Security.framework in Frameworks */,
+				166691461BC49D14002B447F /* QuartzCore.framework in Frameworks */,
+				166691441BC49D0B002B447F /* MobileCoreServices.framework in Frameworks */,
+				166691421BC49CEA002B447F /* CFNetwork.framework in Frameworks */,
+				166691401BC49CE1002B447F /* CoreGraphics.framework in Frameworks */,
+				1666913E1BC49CD6002B447F /* CoreLocation.framework in Frameworks */,
+				81BA817F1A49E0F000E65899 /* libstdc++.6.dylib in Frameworks */,
+				81BA817B1A49E0E500E65899 /* SystemConfiguration.framework in Frameworks */,
+				81BA81791A49E0DB00E65899 /* AudioToolbox.framework in Frameworks */,
+				81BA81771A49E0D500E65899 /* libsqlite3.dylib in Frameworks */,
+				81BA81711A49DB6800E65899 /* Parse.framework in Frameworks */,
+				81BA81701A49DB6800E65899 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1629E12B1BC47CD600FCFA28 = {
+		814C3AC51B69877600E307BB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1629E17E1BC480C100FCFA28 /* BridgeHeader.m */,
-				1629E17B1BC4800D00FCFA28 /* SystemConfiguration.framework */,
-				1629E1791BC47FF400FCFA28 /* Security.framework */,
-				1629E1771BC47FE400FCFA28 /* StoreKit.framework */,
-				1629E1751BC47FD900FCFA28 /* MobileCoreServices.framework */,
-				1629E1731BC47FCE00FCFA28 /* QuartzCore.framework */,
-				1629E1711BC47FC000FCFA28 /* libz.tbd */,
-				1629E16F1BC47F9A00FCFA28 /* CoreGraphics.framework */,
-				1629E16D1BC47F9400FCFA28 /* CoreLocation.framework */,
-				1629E16B1BC47F8B00FCFA28 /* CFNetwork.framework */,
-				1629E1691BC47F8500FCFA28 /* AudioToolbox.framework */,
-				1629E1361BC47CD600FCFA28 /* Crib */,
-				1629E14B1BC47CD700FCFA28 /* CribTests */,
-				1629E1561BC47CD700FCFA28 /* CribUITests */,
-				1629E1351BC47CD600FCFA28 /* Products */,
-				1629E17D1BC480C000FCFA28 /* Crib-Bridging-Header.h */,
+				814C3AC81B69877600E307BB /* Images.xcassets */,
+				814C3AC91B69877600E307BB /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		81BA813C1A49DA1800E65899 = {
+			isa = PBXGroup;
+			children = (
+				81BA81471A49DA1800E65899 /* ParseStarterProject */,
+				814C3AC51B69877600E307BB /* Resources */,
+				81BA816A1A49DB5600E65899 /* Frameworks */,
+				81BA81461A49DA1800E65899 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1629E1351BC47CD600FCFA28 /* Products */ = {
+		81BA81461A49DA1800E65899 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1629E1341BC47CD600FCFA28 /* Crib.app */,
-				1629E1481BC47CD700FCFA28 /* CribTests.xctest */,
-				1629E1531BC47CD700FCFA28 /* CribUITests.xctest */,
+				81BA81451A49DA1800E65899 /* Crib.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1629E1361BC47CD600FCFA28 /* Crib */ = {
+		81BA81471A49DA1800E65899 /* ParseStarterProject */ = {
 			isa = PBXGroup;
 			children = (
-				1629E1651BC47EF200FCFA28 /* Bolts.framework */,
-				1629E1661BC47EF200FCFA28 /* Parse.framework */,
-				1629E1371BC47CD600FCFA28 /* AppDelegate.swift */,
-				1629E1391BC47CD600FCFA28 /* ViewController.swift */,
-				1629E13B1BC47CD600FCFA28 /* Main.storyboard */,
-				1629E13E1BC47CD700FCFA28 /* Assets.xcassets */,
-				1629E1401BC47CD700FCFA28 /* LaunchScreen.storyboard */,
-				1629E1431BC47CD700FCFA28 /* Info.plist */,
+				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
+				81BA814C1A49DA1800E65899 /* ViewController.swift */,
+				814C3AC61B69877600E307BB /* Main.storyboard */,
 			);
-			path = Crib;
+			path = ParseStarterProject;
 			sourceTree = "<group>";
 		};
-		1629E14B1BC47CD700FCFA28 /* CribTests */ = {
+		81BA816A1A49DB5600E65899 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1629E14C1BC47CD700FCFA28 /* CribTests.swift */,
-				1629E14E1BC47CD700FCFA28 /* Info.plist */,
+				166691491BC49D22002B447F /* StoreKit.framework */,
+				166691471BC49D1B002B447F /* Security.framework */,
+				166691451BC49D14002B447F /* QuartzCore.framework */,
+				166691431BC49D0B002B447F /* MobileCoreServices.framework */,
+				166691411BC49CEA002B447F /* CFNetwork.framework */,
+				1666913F1BC49CE1002B447F /* CoreGraphics.framework */,
+				1666913D1BC49CD6002B447F /* CoreLocation.framework */,
+				81BA816B1A49DB6800E65899 /* Bolts.framework */,
+				81BA816C1A49DB6800E65899 /* Parse.framework */,
+				81BA816D1A49DB6800E65899 /* ParseCrashReporting.framework */,
+				81BA816E1A49DB6800E65899 /* ParseFacebookUtils.framework */,
+				81BA81801A49E10C00E65899 /* ParseUI.framework */,
+				81BA81751A49E0C500E65899 /* System Frameworks */,
 			);
-			path = CribTests;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1629E1561BC47CD700FCFA28 /* CribUITests */ = {
+		81BA81751A49E0C500E65899 /* System Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1629E1571BC47CD700FCFA28 /* CribUITests.swift */,
-				1629E1591BC47CD700FCFA28 /* Info.plist */,
+				81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */,
+				81BA817A1A49E0E500E65899 /* SystemConfiguration.framework */,
+				81BA81781A49E0DB00E65899 /* AudioToolbox.framework */,
+				81BA81761A49E0D500E65899 /* libsqlite3.dylib */,
 			);
-			path = CribUITests;
+			name = "System Frameworks";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1629E1331BC47CD600FCFA28 /* Crib */ = {
+		81BA81441A49DA1800E65899 /* Crib */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1629E15C1BC47CD700FCFA28 /* Build configuration list for PBXNativeTarget "Crib" */;
+			buildConfigurationList = 81BA81641A49DA1800E65899 /* Build configuration list for PBXNativeTarget "Crib" */;
 			buildPhases = (
-				1629E1301BC47CD600FCFA28 /* Sources */,
-				1629E1311BC47CD600FCFA28 /* Frameworks */,
-				1629E1321BC47CD600FCFA28 /* Resources */,
+				81BA81411A49DA1800E65899 /* Sources */,
+				81BA81421A49DA1800E65899 /* Frameworks */,
+				81BA81431A49DA1800E65899 /* Resources */,
+				81CC85E11A49F6D40076DE19 /* Upload Symbol Files */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Crib;
-			productName = Crib;
-			productReference = 1629E1341BC47CD600FCFA28 /* Crib.app */;
+			productName = ParseStarterProject;
+			productReference = 81BA81451A49DA1800E65899 /* Crib.app */;
 			productType = "com.apple.product-type.application";
-		};
-		1629E1471BC47CD700FCFA28 /* CribTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1629E15F1BC47CD700FCFA28 /* Build configuration list for PBXNativeTarget "CribTests" */;
-			buildPhases = (
-				1629E1441BC47CD700FCFA28 /* Sources */,
-				1629E1451BC47CD700FCFA28 /* Frameworks */,
-				1629E1461BC47CD700FCFA28 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1629E14A1BC47CD700FCFA28 /* PBXTargetDependency */,
-			);
-			name = CribTests;
-			productName = CribTests;
-			productReference = 1629E1481BC47CD700FCFA28 /* CribTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		1629E1521BC47CD700FCFA28 /* CribUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1629E1621BC47CD700FCFA28 /* Build configuration list for PBXNativeTarget "CribUITests" */;
-			buildPhases = (
-				1629E14F1BC47CD700FCFA28 /* Sources */,
-				1629E1501BC47CD700FCFA28 /* Frameworks */,
-				1629E1511BC47CD700FCFA28 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1629E1551BC47CD700FCFA28 /* PBXTargetDependency */,
-			);
-			name = CribUITests;
-			productName = CribUITests;
-			productReference = 1629E1531BC47CD700FCFA28 /* CribUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1629E12C1BC47CD600FCFA28 /* Project object */ = {
+		81BA813D1A49DA1800E65899 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
-				ORGANIZATIONNAME = "Divine Davis";
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Parse;
 				TargetAttributes = {
-					1629E1331BC47CD600FCFA28 = {
-						CreatedOnToolsVersion = 7.0.1;
-					};
-					1629E1471BC47CD700FCFA28 = {
-						CreatedOnToolsVersion = 7.0.1;
-						TestTargetID = 1629E1331BC47CD600FCFA28;
-					};
-					1629E1521BC47CD700FCFA28 = {
-						CreatedOnToolsVersion = 7.0.1;
-						TestTargetID = 1629E1331BC47CD600FCFA28;
+					81BA81441A49DA1800E65899 = {
+						CreatedOnToolsVersion = 6.1.1;
 					};
 				};
 			};
-			buildConfigurationList = 1629E12F1BC47CD600FCFA28 /* Build configuration list for PBXProject "Crib" */;
+			buildConfigurationList = 81BA81401A49DA1800E65899 /* Build configuration list for PBXProject "Crib" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -265,108 +187,71 @@
 				en,
 				Base,
 			);
-			mainGroup = 1629E12B1BC47CD600FCFA28;
-			productRefGroup = 1629E1351BC47CD600FCFA28 /* Products */;
+			mainGroup = 81BA813C1A49DA1800E65899;
+			productRefGroup = 81BA81461A49DA1800E65899 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1629E1331BC47CD600FCFA28 /* Crib */,
-				1629E1471BC47CD700FCFA28 /* CribTests */,
-				1629E1521BC47CD700FCFA28 /* CribUITests */,
+				81BA81441A49DA1800E65899 /* Crib */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1629E1321BC47CD600FCFA28 /* Resources */ = {
+		81BA81431A49DA1800E65899 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1629E1421BC47CD700FCFA28 /* LaunchScreen.storyboard in Resources */,
-				1629E13F1BC47CD700FCFA28 /* Assets.xcassets in Resources */,
-				1629E13D1BC47CD600FCFA28 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1629E1461BC47CD700FCFA28 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1629E1511BC47CD700FCFA28 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				814C3ACA1B69877600E307BB /* Main.storyboard in Resources */,
+				814C3ACB1B69877600E307BB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		81CC85E11A49F6D40076DE19 /* Upload Symbol Files */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Upload Symbol Files";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script will upload symbol files for your application,\n# so all your crash reports are going to be symbolicated\n\n# Important!\n# Before using the script, please initialize CloudCode folder and replace <path_to_cloudcode_folder> with the path to it\n#\n# Read more on Parse.com - https://parse.com/apps/quickstart#analytics/crashreporting/ios/\n############################################################\n\n\n# export PATH=/usr/local/bin:$PATH\n# cd <path_to_cloudcode_folder>\n\n# parse symbols -p \"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		1629E1301BC47CD600FCFA28 /* Sources */ = {
+		81BA81411A49DA1800E65899 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1629E13A1BC47CD600FCFA28 /* ViewController.swift in Sources */,
-				1629E17F1BC480C100FCFA28 /* BridgeHeader.m in Sources */,
-				1629E1381BC47CD600FCFA28 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1629E1441BC47CD700FCFA28 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1629E14D1BC47CD700FCFA28 /* CribTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1629E14F1BC47CD700FCFA28 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1629E1581BC47CD700FCFA28 /* CribUITests.swift in Sources */,
+				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,
+				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		1629E14A1BC47CD700FCFA28 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1629E1331BC47CD600FCFA28 /* Crib */;
-			targetProxy = 1629E1491BC47CD700FCFA28 /* PBXContainerItemProxy */;
-		};
-		1629E1551BC47CD700FCFA28 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1629E1331BC47CD600FCFA28 /* Crib */;
-			targetProxy = 1629E1541BC47CD700FCFA28 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		1629E13B1BC47CD600FCFA28 /* Main.storyboard */ = {
+		814C3AC61B69877600E307BB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1629E13C1BC47CD600FCFA28 /* Base */,
+				814C3AC71B69877600E307BB /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1629E1401BC47CD700FCFA28 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1629E1411BC47CD700FCFA28 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
+			path = ../Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1629E15A1BC47CD700FCFA28 /* Debug */ = {
+		81BA81621A49DA1800E65899 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -385,32 +270,31 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		1629E15B1BC47CD700FCFA28 /* Release */ = {
+		81BA81631A49DA1800E65899 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -428,145 +312,76 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		1629E15D1BC47CD700FCFA28 /* Debug */ = {
+		81BA81651A49DA1800E65899 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Crib",
+					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = Crib/Info.plist;
+				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = divinedavis.Crib;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Crib-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				PRODUCT_NAME = Crib;
 			};
 			name = Debug;
 		};
-		1629E15E1BC47CD700FCFA28 /* Release */ = {
+		81BA81661A49DA1800E65899 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Crib",
+					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = Crib/Info.plist;
+				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = divinedavis.Crib;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Crib-Bridging-Header.h";
-			};
-			name = Release;
-		};
-		1629E1601BC47CD700FCFA28 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = CribTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = divinedavis.CribTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crib.app/Crib";
-			};
-			name = Debug;
-		};
-		1629E1611BC47CD700FCFA28 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = CribTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = divinedavis.CribTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crib.app/Crib";
-			};
-			name = Release;
-		};
-		1629E1631BC47CD700FCFA28 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = CribUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = divinedavis.CribUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Crib;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		1629E1641BC47CD700FCFA28 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = CribUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = divinedavis.CribUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Crib;
-				USES_XCTRUNNER = YES;
+				PRODUCT_NAME = Crib;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1629E12F1BC47CD600FCFA28 /* Build configuration list for PBXProject "Crib" */ = {
+		81BA81401A49DA1800E65899 /* Build configuration list for PBXProject "Crib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1629E15A1BC47CD700FCFA28 /* Debug */,
-				1629E15B1BC47CD700FCFA28 /* Release */,
+				81BA81621A49DA1800E65899 /* Debug */,
+				81BA81631A49DA1800E65899 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1629E15C1BC47CD700FCFA28 /* Build configuration list for PBXNativeTarget "Crib" */ = {
+		81BA81641A49DA1800E65899 /* Build configuration list for PBXNativeTarget "Crib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1629E15D1BC47CD700FCFA28 /* Debug */,
-				1629E15E1BC47CD700FCFA28 /* Release */,
+				81BA81651A49DA1800E65899 /* Debug */,
+				81BA81661A49DA1800E65899 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		1629E15F1BC47CD700FCFA28 /* Build configuration list for PBXNativeTarget "CribTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1629E1601BC47CD700FCFA28 /* Debug */,
-				1629E1611BC47CD700FCFA28 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		1629E1621BC47CD700FCFA28 /* Build configuration list for PBXNativeTarget "CribUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1629E1631BC47CD700FCFA28 /* Debug */,
-				1629E1641BC47CD700FCFA28 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1629E12C1BC47CD600FCFA28 /* Project object */;
+	rootObject = 81BA813D1A49DA1800E65899 /* Project object */;
 }

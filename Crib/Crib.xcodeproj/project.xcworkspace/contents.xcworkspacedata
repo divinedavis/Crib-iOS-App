@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Crib.xcodeproj">
+      location = "self:/Users/divineDavis/Downloads/parse-starter-project-1/ParseStarterProject-Swift/Crib.xcodeproj">
    </FileRef>
 </Workspace>

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1629E1331BC47CD600FCFA28"
+               BlueprintIdentifier = "81BA81441A49DA1800E65899"
                BuildableName = "Crib.app"
                BlueprintName = "Crib"
                ReferencedContainer = "container:Crib.xcodeproj">
@@ -28,31 +28,11 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1629E1471BC47CD700FCFA28"
-               BuildableName = "CribTests.xctest"
-               BlueprintName = "CribTests"
-               ReferencedContainer = "container:Crib.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1629E1521BC47CD700FCFA28"
-               BuildableName = "CribUITests.xctest"
-               BlueprintName = "CribUITests"
-               ReferencedContainer = "container:Crib.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1629E1331BC47CD600FCFA28"
+            BlueprintIdentifier = "81BA81441A49DA1800E65899"
             BuildableName = "Crib.app"
             BlueprintName = "Crib"
             ReferencedContainer = "container:Crib.xcodeproj">
@@ -75,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1629E1331BC47CD600FCFA28"
+            BlueprintIdentifier = "81BA81441A49DA1800E65899"
             BuildableName = "Crib.app"
             BlueprintName = "Crib"
             ReferencedContainer = "container:Crib.xcodeproj">
@@ -94,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1629E1331BC47CD600FCFA28"
+            BlueprintIdentifier = "81BA81441A49DA1800E65899"
             BuildableName = "Crib.app"
             BlueprintName = "Crib"
             ReferencedContainer = "container:Crib.xcodeproj">

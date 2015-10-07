@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Crib.xcscheme</key>
+		<key>ParseStarterProject-Swift.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,17 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1629E1331BC47CD600FCFA28</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>1629E1471BC47CD700FCFA28</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>1629E1521BC47CD700FCFA28</key>
+		<key>81BA81441A49DA1800E65899</key>
 		<dict>
 			<key>primary</key>
 			<true/>
