@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         
-
+/*
         let score = PFObject(className: "Score")
         score["FirstName"] = "Rob"
         score.saveInBackgroundWithBlock{ (success : Bool, error : NSError?) -> Void in
@@ -30,8 +30,26 @@ class ViewController: UIViewController {
         let testObject = PFObject(className: "TestObject")
         testObject["foo"] = "bar"
         testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
-            print("Object has been saved.")
-        }
+            
+            if success == true {
+            print("Object has been saved. With \(testObject.objectId)")
+                
+            } else {
+                print(error)
+            }
+        } */
+        
+        var query = PFQuery(className: "Score")
+        query.getObjectInBackgroundWithId("cnuKBqSYA6") { (score : PFObject!, error: NSError?) -> Void in
+            
+            if error == nil {
+                print("Object has been saved. With \(score.objectId)")
+                
+            } else {
+                print(error)
+            }
+        })
+        
         
     
     }
