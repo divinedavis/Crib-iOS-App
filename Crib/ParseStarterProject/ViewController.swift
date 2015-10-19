@@ -12,8 +12,26 @@ import Parse
 
 
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
+    @IBAction func pickImage(sender: AnyObject) {
+        
+        var image = UIImagePickerController()
+        
+        image.delegate = self
+        image.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+        image.allowsEditing = false
+        
+        self.presentViewController(image, animated: true, completion: nil)
+        
+        
+        
+        
+    }
+    
+    @IBOutlet weak var pickedImage: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,18 +55,20 @@ class ViewController: UIViewController {
             } else {
                 print(error)
             }
-        } */
+        }
         
         var query = PFQuery(className: "Score")
-        query.getObjectInBackgroundWithId("cnuKBqSYA6") { (score : PFObject!, error: NSError?) -> Void in
+        query.getObjectInBackgroundWithId("cnuKBqSYA6") {
+            (score : PFObject?, error: NSError?) -> Void in
             
             if error == nil {
-                print("Object has been saved. With \(score.objectId)")
+//                print(score?.objectForKey("FirstName"))
+                
                 
             } else {
                 print(error)
             }
-        })
+        } */
         
         
     
