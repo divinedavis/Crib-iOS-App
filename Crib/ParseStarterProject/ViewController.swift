@@ -15,6 +15,7 @@ import Parse
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
     var images = UIImagePickerController()
+    var activityIndicator : UIActivityIndicatorView = UIActivityIndicatorView()
     
     @IBOutlet weak var pickedImage: UIImageView!
 
@@ -26,6 +27,39 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         
         self.presentViewController(images, animated: true, completion: nil)
     }
+    
+    @available(iOS 8.0, *)
+    @IBAction func createAlert(sender: AnyObject) {
+        
+        let alert = UIAlertController(title: "Default", message: "a standard", preferredStyle: .Alert)
+        let cancelAlert = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
+        alert.addAction(cancelAlert)
+        presentViewController(alert, animated: true, completion: nil)
+        
+        
+    }
+    
+    @IBAction func pause(sender: AnyObject) {
+        
+        activityIndicator = UIActivityIndicatorView(frame: CGRectMake(0, 0, 50, 50))
+        
+        activityIndicator.center = self.view.center
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
+        activityIndicator.startAnimating()
+        
+        view.addSubview(activityIndicator)
+        
+        //UIApplication.sharedApplication().beginIgnoringInteractionEvents()
+        
+    }
+    
+    @IBAction func restore(sender: AnyObject) {
+        
+        activityIndicator.stopAnimating()
+        //UIApplication.sharedApplication().endIgnoringInteractionEvents()
+    }
+    
     
     func imagePickerController(picker: UIImagePickerController,
         didFinishPickingMediaWithInfo info: [String : AnyObject]) {

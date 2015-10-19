@@ -38,16 +38,25 @@
                                 <rect key="frame" x="51" y="45" width="83" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Create Alert"/>
+                                <connections>
+                                    <action selector="createAlert:" destination="h32-ax-Zt9" eventType="touchUpInside" id="ppc-6P-Yl2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHG-Yi-oWC">
                                 <rect key="frame" x="191" y="45" width="74" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Pause App"/>
+                                <connections>
+                                    <action selector="pause:" destination="h32-ax-Zt9" eventType="touchUpInside" id="oAA-fv-FQz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQq-Af-O2s">
                                 <rect key="frame" x="191" y="83" width="85" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Restore App"/>
+                                <connections>
+                                    <action selector="restore:" destination="h32-ax-Zt9" eventType="touchUpInside" id="Nrp-X6-R5O"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
