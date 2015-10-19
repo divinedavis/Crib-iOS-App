@@ -14,22 +14,29 @@ import Parse
 
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
-    @IBAction func pickImage(sender: AnyObject) {
-        
-        var image = UIImagePickerController()
-        
-        image.delegate = self
-        image.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
-        image.allowsEditing = false
-        
-        self.presentViewController(image, animated: true, completion: nil)
-        
-        
-        
-        
-    }
+    var images = UIImagePickerController()
     
     @IBOutlet weak var pickedImage: UIImageView!
+
+    @IBAction func pickImage(sender: AnyObject) {
+        
+        images.delegate = self
+        images.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+        images.allowsEditing = false
+        
+        self.presentViewController(images, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(picker: UIImagePickerController,
+        didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+            print("image selected")
+            
+            pickedImage.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+            self.dismissViewControllerAnimated(true, completion: nil)
+            
+            
+    }
+    
     
     
     override func viewDidLoad() {
