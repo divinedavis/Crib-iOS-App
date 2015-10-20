@@ -9,10 +9,13 @@
 
 import UIKit
 import Parse
+import Foundation
 
 
 
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+    
+    
 
     var activityIndicator : UIActivityIndicatorView = UIActivityIndicatorView()
     
@@ -78,6 +81,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         }
         
         if error != "" {
+            
             displayAlert("Error in the credentials you entered", error: error)
         
         } else {
@@ -142,11 +146,12 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
                 if signupError == nil {
                     
                     print("logged in")
+                    
                 } else {
                     
                     if let errorString = signupError!.userInfo["error"] as? NSString {
                     
-                    error = "Please try again later"
+                    error = errorString as String
                     
                     } else {
                         error = "Please try again later"

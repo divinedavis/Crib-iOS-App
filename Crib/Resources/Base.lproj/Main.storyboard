@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,6 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="aUV-u6-4pG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <animations/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Crib" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7H-Oa-GB7">
                                 <rect key="frame" x="20" y="39" width="280" height="46"/>
                                 <animations/>
@@ -77,7 +82,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <state key="normal" title="Log In"/>
                                 <connections>
-                                    <action selector="signup:" destination="h32-ax-Zt9" eventType="touchUpInside" id="o71-FP-W8K"/>
                                     <action selector="toggleSignup:" destination="h32-ax-Zt9" eventType="touchUpInside" id="Nu3-7i-JpU"/>
                                 </connections>
                             </button>
@@ -110,6 +114,7 @@
                             <constraint firstItem="TwS-rU-Se3" firstAttribute="top" secondItem="fl9-kP-Xxm" secondAttribute="bottom" constant="4" id="0Qd-xy-p3Q"/>
                             <constraint firstItem="TwS-rU-Se3" firstAttribute="centerY" secondItem="k0r-C5-wvq" secondAttribute="centerY" id="1Vh-GG-5oe"/>
                             <constraint firstItem="EC5-it-tuK" firstAttribute="top" secondItem="Aba-mP-9DA" secondAttribute="bottom" constant="8" id="1jg-zU-iD9"/>
+                            <constraint firstItem="bBp-27-hpV" firstAttribute="top" secondItem="aUV-u6-4pG" secondAttribute="bottom" id="43U-b9-Lwi"/>
                             <constraint firstItem="Bhg-Yc-LU6" firstAttribute="top" secondItem="fl9-kP-Xxm" secondAttribute="bottom" constant="8" id="BaX-Ti-jU0"/>
                             <constraint firstItem="fl9-kP-Xxm" firstAttribute="top" secondItem="EC5-it-tuK" secondAttribute="bottom" constant="29" id="DYH-m0-3Yy"/>
                             <constraint firstItem="Ak1-c7-5ai" firstAttribute="centerY" secondItem="k0r-C5-wvq" secondAttribute="centerY" id="FMN-XM-czm"/>
@@ -119,11 +124,14 @@
                             <constraint firstItem="Bhg-Yc-LU6" firstAttribute="leading" secondItem="Ak1-c7-5ai" secondAttribute="trailing" constant="-33" id="LXz-LU-EJe"/>
                             <constraint firstItem="fl9-kP-Xxm" firstAttribute="centerX" secondItem="k0r-C5-wvq" secondAttribute="centerX" id="OLH-Zd-AOL"/>
                             <constraint firstItem="v7H-Oa-GB7" firstAttribute="centerX" secondItem="k0r-C5-wvq" secondAttribute="centerX" id="Qsk-fc-myS"/>
+                            <constraint firstItem="aUV-u6-4pG" firstAttribute="leading" secondItem="k0r-C5-wvq" secondAttribute="leadingMargin" constant="-20" id="Xtw-Mo-M5I"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aUV-u6-4pG" secondAttribute="trailing" constant="-20" id="jvb-P0-xYk"/>
                             <constraint firstItem="EC5-it-tuK" firstAttribute="centerX" secondItem="k0r-C5-wvq" secondAttribute="centerX" id="kbt-Gj-SeQ"/>
                             <constraint firstItem="Aba-mP-9DA" firstAttribute="top" secondItem="fuH-JU-j03" secondAttribute="bottom" constant="27" id="nuF-5m-5Hf"/>
                             <constraint firstItem="Bhg-Yc-LU6" firstAttribute="centerX" secondItem="k0r-C5-wvq" secondAttribute="centerX" id="pGm-SC-QAe"/>
                             <constraint firstItem="Aba-mP-9DA" firstAttribute="centerX" secondItem="k0r-C5-wvq" secondAttribute="centerX" id="pwI-04-6yQ"/>
                             <constraint firstItem="v7H-Oa-GB7" firstAttribute="top" secondItem="cHj-bD-JdB" secondAttribute="bottom" constant="19" id="tvV-Oo-opD"/>
+                            <constraint firstItem="aUV-u6-4pG" firstAttribute="top" secondItem="k0r-C5-wvq" secondAttribute="topMargin" id="vrE-ck-NBc"/>
                             <constraint firstItem="TwS-rU-Se3" firstAttribute="leading" secondItem="Bhg-Yc-LU6" secondAttribute="trailing" constant="-1" id="zNx-2K-0iO"/>
                         </constraints>
                     </view>
@@ -141,4 +149,7 @@
             <point key="canvasLocation" x="88" y="-8"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background.png" width="750" height="1334"/>
+    </resources>
 </document>
