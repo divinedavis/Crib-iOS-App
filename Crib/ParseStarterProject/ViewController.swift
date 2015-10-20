@@ -104,11 +104,6 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
             
             
             if signupActive == true {
-                
-                var user = PFUser()
-                
-                user.username = username.text
-                user.password = password.text
             
                 user.signUpInBackgroundWithBlock {
                     (succeeded: Bool, signupError: NSError?) -> Void in
