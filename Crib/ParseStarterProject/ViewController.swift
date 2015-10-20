@@ -153,6 +153,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
                     }
                 
                 self.displayAlert("Could not log in", error: error)
+                    
                 }
             }
         }
@@ -161,6 +162,18 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print(PFUser.currentUser()!)
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        if PFUser.currentUser() != nil {
+            
+            self.performSegueWithIdentifier("jumpToUserTable", sender: self)
+            
+        }
         
     }
 
