@@ -14,105 +14,36 @@ import Parse
 
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
-    var images = UIImagePickerController()
-    var activityIndicator : UIActivityIndicatorView = UIActivityIndicatorView()
+    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var password: UITextField!
     
-    @IBOutlet weak var pickedImage: UIImageView!
-
-    @IBAction func pickImage(sender: AnyObject) {
+    @IBAction func signup(sender: AnyObject) {
+        var error = ""
         
-        images.delegate = self
-        images.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
-        images.allowsEditing = false
+        if username.text == "" || password.text == "" {
+            error = "Please enter a username & password"
+        }
         
-        self.presentViewController(images, animated: true, completion: nil)
-    }
-    
-    @available(iOS 8.0, *)
-    @IBAction func createAlert(sender: AnyObject) {
-        
-        let alert = UIAlertController(title: "Default", message: "a standard", preferredStyle: .Alert)
-        let cancelAlert = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
-        alert.addAction(cancelAlert)
-        presentViewController(alert, animated: true, completion: nil)
-        
-        
-    }
-    
-    @IBAction func pause(sender: AnyObject) {
-        
-        activityIndicator = UIActivityIndicatorView(frame: CGRectMake(0, 0, 50, 50))
-        
-        activityIndicator.center = self.view.center
-        activityIndicator.hidesWhenStopped = true
-        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
-        activityIndicator.startAnimating()
-        
-        view.addSubview(activityIndicator)
-        
-        //UIApplication.sharedApplication().beginIgnoringInteractionEvents()
-        
-    }
-    
-    @IBAction func restore(sender: AnyObject) {
-        
-        activityIndicator.stopAnimating()
-        //UIApplication.sharedApplication().endIgnoringInteractionEvents()
-    }
-    
-    
-    func imagePickerController(picker: UIImagePickerController,
-        didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-            print("image selected")
+        if error != "" {
+            if #available(iOS 8.0, *) {
+                let alert = UIAlertController(title: "Something is wrong", message: error, preferredStyle: .Alert)
+                
+                alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { action in
+                    self.dismissViewControllerAnimated(true, completion: nil)}))
+                
+                self.presentViewController(alert, animated: true, completion: nil)
+            } else {
+                // Fallback on earlier versions
+            }
             
-            pickedImage.image = info[UIImagePickerControllerOriginalImage] as? UIImage
-            self.dismissViewControllerAnimated(true, completion: nil)
-            
-            
+                
+                
+            }
+        
     }
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-/*
-        let score = PFObject(className: "Score")
-        score["FirstName"] = "Rob"
-        score.saveInBackgroundWithBlock{ (success : Bool, error : NSError?) -> Void in
-            print("Saved")
-        }
-        
-        
-        
-        let testObject = PFObject(className: "TestObject")
-        testObject["foo"] = "bar"
-        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
-            
-            if success == true {
-            print("Object has been saved. With \(testObject.objectId)")
-                
-            } else {
-                print(error)
-            }
-        }
-        
-        var query = PFQuery(className: "Score")
-        query.getObjectInBackgroundWithId("cnuKBqSYA6") {
-            (score : PFObject?, error: NSError?) -> Void in
-            
-            if error == nil {
-//                print(score?.objectForKey("FirstName"))
-                
-                
-            } else {
-                print(error)
-            }
-        } */
-        
-        
-    
     }
 
     override func didReceiveMemoryWarning() {

@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,73 +17,75 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wH-gU-Rrh">
-                                <rect key="frame" x="51" y="83" width="75" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Pick Image"/>
-                                <connections>
-                                    <action selector="pickImage:" destination="h32-ax-Zt9" eventType="touchUpInside" id="3Wg-yc-PIN"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zqf-1Y-sQM">
-                                <rect key="frame" x="10" y="159" width="300" height="300"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Crib" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7H-Oa-GB7">
+                                <rect key="frame" x="20" y="39" width="280" height="46"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="0tx-zw-BLV"/>
-                                    <constraint firstAttribute="height" constant="300" id="Ffu-dQ-Y0s"/>
+                                    <constraint firstAttribute="width" constant="280" id="5SI-MD-TxN"/>
+                                    <constraint firstAttribute="height" constant="46" id="6Ji-7V-sew"/>
                                 </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9n-xa-kCu">
-                                <rect key="frame" x="51" y="45" width="83" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use the form below to sign up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuH-JU-j03">
+                                <rect key="frame" x="20" y="93" width="280" height="46"/>
                                 <animations/>
-                                <state key="normal" title="Create Alert"/>
-                                <connections>
-                                    <action selector="createAlert:" destination="h32-ax-Zt9" eventType="touchUpInside" id="ppc-6P-Yl2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHG-Yi-oWC">
-                                <rect key="frame" x="191" y="45" width="74" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="Dic-Ng-QPC"/>
+                                    <constraint firstAttribute="height" constant="46" id="yB8-Ae-CMM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aba-mP-9DA">
+                                <rect key="frame" x="86" y="166" width="149" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Pause App"/>
-                                <connections>
-                                    <action selector="pause:" destination="h32-ax-Zt9" eventType="touchUpInside" id="oAA-fv-FQz"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQq-Af-O2s">
-                                <rect key="frame" x="191" y="83" width="85" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="149" id="BG2-Pi-jhh"/>
+                                    <constraint firstAttribute="height" constant="30" id="nly-jJ-fOs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EC5-it-tuK">
+                                <rect key="frame" x="86" y="204" width="149" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Restore App"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XHG-hh-OY5"/>
+                                    <constraint firstAttribute="width" constant="149" id="yrG-OZ-kYX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fl9-kP-Xxm">
+                                <rect key="frame" x="133" y="263" width="55" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Sign Up"/>
                                 <connections>
-                                    <action selector="restore:" destination="h32-ax-Zt9" eventType="touchUpInside" id="Nrp-X6-R5O"/>
+                                    <action selector="signup:" destination="h32-ax-Zt9" eventType="touchUpInside" id="YjG-Bc-4jZ"/>
                                 </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="WQq-Af-O2s" firstAttribute="leading" secondItem="9wH-gU-Rrh" secondAttribute="trailing" constant="65" id="006-yR-JXe"/>
-                            <constraint firstItem="WQq-Af-O2s" firstAttribute="leading" secondItem="9wH-gU-Rrh" secondAttribute="trailing" constant="65" id="0I9-F4-Ybd"/>
-                            <constraint firstItem="A9n-xa-kCu" firstAttribute="leading" secondItem="k0r-C5-wvq" secondAttribute="leadingMargin" constant="31" id="5m8-6E-Iyh"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="eHG-Yi-oWC" secondAttribute="trailing" constant="35" id="Jth-M0-97C"/>
-                            <constraint firstItem="eHG-Yi-oWC" firstAttribute="top" secondItem="cHj-bD-JdB" secondAttribute="bottom" constant="25" id="KJV-S7-ON2"/>
-                            <constraint firstItem="Zqf-1Y-sQM" firstAttribute="leading" secondItem="k0r-C5-wvq" secondAttribute="leadingMargin" constant="-10" id="NHs-6B-eYT"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Zqf-1Y-sQM" secondAttribute="trailing" constant="-10" id="VZU-GO-UTq"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="WQq-Af-O2s" secondAttribute="trailing" constant="24" id="WvE-Zr-yx4"/>
-                            <constraint firstItem="WQq-Af-O2s" firstAttribute="top" secondItem="eHG-Yi-oWC" secondAttribute="bottom" constant="8" id="ZiU-XT-nSU"/>
-                            <constraint firstItem="Zqf-1Y-sQM" firstAttribute="top" secondItem="9wH-gU-Rrh" secondAttribute="bottom" constant="46" id="csu-Vc-ncA"/>
-                            <constraint firstItem="WQq-Af-O2s" firstAttribute="top" secondItem="eHG-Yi-oWC" secondAttribute="bottom" constant="8" id="dq4-zX-ZD0"/>
-                            <constraint firstItem="bBp-27-hpV" firstAttribute="top" secondItem="Zqf-1Y-sQM" secondAttribute="bottom" constant="109" id="eBf-4F-jmI"/>
-                            <constraint firstItem="Zqf-1Y-sQM" firstAttribute="top" secondItem="WQq-Af-O2s" secondAttribute="bottom" constant="46" id="fxG-Hh-qJW"/>
-                            <constraint firstItem="eHG-Yi-oWC" firstAttribute="leading" secondItem="A9n-xa-kCu" secondAttribute="trailing" constant="57" id="iX5-I0-DXm"/>
-                            <constraint firstItem="9wH-gU-Rrh" firstAttribute="top" secondItem="A9n-xa-kCu" secondAttribute="bottom" constant="8" id="ibq-sY-91h"/>
-                            <constraint firstItem="eHG-Yi-oWC" firstAttribute="leading" secondItem="A9n-xa-kCu" secondAttribute="trailing" constant="57" id="n7P-M9-EzL"/>
-                            <constraint firstItem="9wH-gU-Rrh" firstAttribute="top" secondItem="A9n-xa-kCu" secondAttribute="bottom" constant="8" id="vvC-SS-xbw"/>
-                            <constraint firstItem="9wH-gU-Rrh" firstAttribute="leading" secondItem="k0r-C5-wvq" secondAttribute="leadingMargin" constant="31" id="wBh-fz-4AU"/>
-                            <constraint firstItem="A9n-xa-kCu" firstAttribute="top" secondItem="cHj-bD-JdB" secondAttribute="bottom" constant="25" id="xDC-X2-ovZ"/>
+                            <constraint firstItem="EC5-it-tuK" firstAttribute="top" secondItem="Aba-mP-9DA" secondAttribute="bottom" constant="8" id="1jg-zU-iD9"/>
+                            <constraint firstItem="fl9-kP-Xxm" firstAttribute="top" secondItem="EC5-it-tuK" secondAttribute="bottom" constant="29" id="DYH-m0-3Yy"/>
+                            <constraint firstItem="fuH-JU-j03" firstAttribute="centerX" secondItem="k0r-C5-wvq" secondAttribute="centerX" id="ILQ-FN-nla"/>
+                            <constraint firstItem="fuH-JU-j03" firstAttribute="top" secondItem="v7H-Oa-GB7" secondAttribute="bottom" constant="8" id="JaV-o5-XD6"/>
+                            <constraint firstItem="fl9-kP-Xxm" firstAttribute="centerX" secondItem="k0r-C5-wvq" secondAttribute="centerX" id="OLH-Zd-AOL"/>
+                            <constraint firstItem="v7H-Oa-GB7" firstAttribute="centerX" secondItem="k0r-C5-wvq" secondAttribute="centerX" id="Qsk-fc-myS"/>
+                            <constraint firstItem="EC5-it-tuK" firstAttribute="centerX" secondItem="k0r-C5-wvq" secondAttribute="centerX" id="kbt-Gj-SeQ"/>
+                            <constraint firstItem="Aba-mP-9DA" firstAttribute="top" secondItem="fuH-JU-j03" secondAttribute="bottom" constant="27" id="nuF-5m-5Hf"/>
+                            <constraint firstItem="Aba-mP-9DA" firstAttribute="centerX" secondItem="k0r-C5-wvq" secondAttribute="centerX" id="pwI-04-6yQ"/>
+                            <constraint firstItem="v7H-Oa-GB7" firstAttribute="top" secondItem="cHj-bD-JdB" secondAttribute="bottom" constant="19" id="tvV-Oo-opD"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="pickedImage" destination="Zqf-1Y-sQM" id="jhp-Kc-VrW"/>
+                        <outlet property="password" destination="EC5-it-tuK" id="tf0-t7-Et9"/>
+                        <outlet property="username" destination="Aba-mP-9DA" id="p34-st-iWu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WiP-3E-uy0" userLabel="First Responder" sceneMemberID="firstResponder"/>
