@@ -14,8 +14,59 @@ import Parse
 
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
+    var activityIndicator : UIActivityIndicatorView = UIActivityIndicatorView()
+    
+    var signupActive : Bool = true
+    
+    func displayAlert(title : String, error : String) {
+        
+        
+        let alert = UIAlertController(title: "Something is wrong", message: error, preferredStyle: .Alert)
+        
+        alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { action in
+            self.dismissViewControllerAnimated(true, completion: nil)}))
+        
+        self.presentViewController(alert, animated: true, completion: nil)
+
+    }
     @IBOutlet weak var username: UITextField!
+    
     @IBOutlet weak var password: UITextField!
+    
+    @IBOutlet weak var signupLabel: UILabel!
+    
+    @IBOutlet weak var signupButton: UIButton!
+    
+    @IBOutlet weak var signupToggleButton: UIButton!
+    
+    @IBOutlet weak var alreadyRegistered: UILabel!
+    
+    @IBAction func toggleSignup(sender: AnyObject) {
+        
+        if signupActive == true {
+            
+            signupActive = false
+            
+            signupLabel.text = "Use the form below to log in"
+            
+            signupButton.setTitle("Log in", forState: UIControlState.Normal)
+            
+            alreadyRegistered.text = "Not registered?"
+            
+            signupToggleButton.setTitle("Sign up", forState: UIControlState.Normal)
+            
+        } else {
+            signupActive = true
+            
+            signupLabel.text = "Use the form below to sign up"
+            
+            signupButton.setTitle("Sign up", forState: UIControlState.Normal)
+            
+            alreadyRegistered.text = "Already registered?"
+            
+            signupToggleButton.setTitle("Log in", forState: UIControlState.Normal)
+        }
+    }
     
     @IBAction func signup(sender: AnyObject) {
         var error = ""
@@ -25,16 +76,51 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         }
         
         if error != "" {
+            displayAlert("Error in the credentials you entered", error: error)
+        
+        } else {
             
-                let alert = UIAlertController(title: "Something is wrong", message: error, preferredStyle: .Alert)
+            var user = PFUser()
+            
+            user.username = username.text
+            user.password = username.text
+            user.email = "email@example.com"
+
+            user["phone"] = "415-392-0202"
+            
+            activityIndicator = UIActivityIndicatorView(frame: CGRectMake(0, 0, 50, 50))
+            activityIndicator.center = self.view.center
+            activityIndicator.hidesWhenStopped = true
+            activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
+            view.addSubview(activityIndicator)
+            activityIndicator.startAnimating()
+            UIApplication.sharedApplication().beginIgnoringInteractionEvents()
+            
+            user.signUpInBackgroundWithBlock {
+                (succeeded: Bool, signupError: NSError?) -> Void in
                 
-                alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { action in
-                    self.dismissViewControllerAnimated(true, completion: nil)}))
+                self.activityIndicator.stopAnimating()
+                UIApplication.sharedApplication().endIgnoringInteractionEvents()
                 
-                self.presentViewController(alert, animated: true, completion: nil)
-            } else {
-                // Fallback on earlier versions
+                if signupError == nil {
+                    if let errorString = signupError?.userInfo["error"] as? NSString {
+                        
+                        error = errorString as String
+                        
+                    }
+
+                } else {
+                    
+                    error = "Please try again later"
+                    
+                }
+                self.displayAlert("Could not sign up", error: error)
             }
+
+
+            
+        
+        }
         
     }
     override func viewDidLoad() {
