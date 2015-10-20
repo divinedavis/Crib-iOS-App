@@ -25,7 +25,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         }
         
         if error != "" {
-            if #available(iOS 8.0, *) {
+            
                 let alert = UIAlertController(title: "Something is wrong", message: error, preferredStyle: .Alert)
                 
                 alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { action in
@@ -34,10 +34,6 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
                 self.presentViewController(alert, animated: true, completion: nil)
             } else {
                 // Fallback on earlier versions
-            }
-            
-                
-                
             }
         
     }
