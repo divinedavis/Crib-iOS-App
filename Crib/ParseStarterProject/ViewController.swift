@@ -2,6 +2,7 @@
 * Copyright (c) 2015-present, Parse, LLC.
 * All rights reserved.
 *
+* @author: Divine Davis
 * This source code is licensed under the BSD-style license found in the
 * LICENSE file in the root directory of this source tree. An additional grant
 * of patent rights can be found in the PATENTS file in the same directory.
@@ -21,12 +22,12 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     var signupActive : Bool = true
     
+    //Making a function that displays an alert when the user does something wrong
     func displayAlert(title : String, error : String) {
         
+        let alert = UIAlertController(title: "Uh oh!", message: error, preferredStyle: .Alert)
         
-        let alert = UIAlertController(title: "Something is wrong", message: error, preferredStyle: .Alert)
-        
-        alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { action in
+        alert.addAction(UIAlertAction(title: "Alright", style: .Default, handler: { action in
             
             self.dismissViewControllerAnimated(true, completion: nil)}))
         
@@ -191,7 +192,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         
         super.viewDidLoad()
         
-        //Printing the currentUser name 
+        //Printing the currentUser name
         print(PFUser.currentUser()!)
         
     }
