@@ -195,6 +195,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         //Printing the currentUser name
         print(PFUser.currentUser()!)
         
+        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -206,6 +207,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
             self.performSegueWithIdentifier("jumpToUserTable", sender: self)
             
         }
+        
         
     }
 
