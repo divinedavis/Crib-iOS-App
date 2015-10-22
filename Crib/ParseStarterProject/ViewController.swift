@@ -168,12 +168,12 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     }
     
     override func viewDidAppear(animated: Bool) {
-        
-        if PFUser.currentUser() != nil {
-            
-            self.performSegueWithIdentifier("jumpToUserTable", sender: self)
-            
-        }
+//        
+//        if PFUser.currentUser() != nil {
+//            
+//            self.performSegueWithIdentifier("jumpToUserTable", sender: self)
+//            
+//        }
         
     }
 
