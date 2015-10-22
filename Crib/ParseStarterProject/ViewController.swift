@@ -89,7 +89,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
             var user = PFUser()
             
             user.username = username.text
-            user.password = username.text
+            user.password = password.text
             
             activityIndicator = UIActivityIndicatorView(frame: CGRectMake(0, 0, 50, 50))
             activityIndicator.center = self.view.center
@@ -168,7 +168,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     }
     
     override func viewDidAppear(animated: Bool) {
-//        
+        
 //        if PFUser.currentUser() != nil {
 //            
 //            self.performSegueWithIdentifier("jumpToUserTable", sender: self)
