@@ -90,7 +90,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         
         } else {
             
-            var user = PFUser()
+            let user = PFUser()
             
             user.username = username.text
             user.password = password.text
