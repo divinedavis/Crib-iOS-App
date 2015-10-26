@@ -205,11 +205,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         if PFUser.currentUser() != nil {
             
             //Use this segue if the currentUser is logged in
-            self.performSegueWithIdentifier("jumpToUserTable", sender: self)
-            
+            self.performSegueWithIdentifier("jumpToUserTable", sender: self)    
         }
-        
-        
     }
 
     override func didReceiveMemoryWarning() {

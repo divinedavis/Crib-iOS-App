@@ -6,18 +6,19 @@
 //  Copyright © 2015 Parse. All rights reserved.
 //
 
+import Parse
 import UIKit
 
 class UserTableViewController: UITableViewController {
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        //Printing the currentUser name
+        print(PFUser.currentUser()!)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
