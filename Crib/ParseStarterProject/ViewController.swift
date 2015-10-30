@@ -17,11 +17,24 @@ import Foundation
 
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
-    
-
     var activityIndicator : UIActivityIndicatorView = UIActivityIndicatorView()
     
+    //Labels  & buttons
+    @IBOutlet weak var username: UITextField!
+    
+    @IBOutlet weak var password: UITextField!
+    
+    @IBOutlet weak var signupLabel: UILabel!
+    
+    @IBOutlet weak var signupButton: UIButton!
+    
+    @IBOutlet weak var signupToggleButton: UIButton!
+    
+    @IBOutlet weak var alreadyRegistered: UILabel!
+    
     var signupActive : Bool = true
+    
+    // Mark: I start making my functions
     
     //Making a function that displays an alert when the user does something wrong
     func displayAlert(title : String, error : String) {
@@ -35,18 +48,6 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         self.presentViewController(alert, animated: true, completion: nil)
 
     }
-    
-    @IBOutlet weak var username: UITextField!
-    
-    @IBOutlet weak var password: UITextField!
-    
-    @IBOutlet weak var signupLabel: UILabel!
-    
-    @IBOutlet weak var signupButton: UIButton!
-    
-    @IBOutlet weak var signupToggleButton: UIButton!
-    
-    @IBOutlet weak var alreadyRegistered: UILabel!
     
     @IBAction func toggleSignup(sender: AnyObject) {
         
@@ -195,7 +196,6 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         
         //Printing the currentUser name
         print(PFUser.currentUser()!)
-        
         
     }
     

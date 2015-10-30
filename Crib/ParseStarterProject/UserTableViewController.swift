@@ -20,20 +20,20 @@ class UserTableViewController: UITableViewController {
         //Printing the currentUser name
         print(PFUser.currentUser()!)
         
-        var query = PFUser.query()
-        
-        query?.findObjectsInBackgroundWithBlock({ (objects : [AnyObject]!, error : NSError!) -> Void in
-            
-            self.users.removeAll(keepCapacity : true)
-            
-            for object in objects {
-                
-                var user : PFUser = (object as? PFUser)!
-                
-                self.users.append(user.username!)
-                
-            }
-        })
+//        var query = PFUser.query()
+//        
+//        query?.findObjectsInBackgroundWithBlock({ (objects : [AnyObject]!, error : NSError!) -> Void in
+//            
+//            self.users.removeAll(keepCapacity : true)
+//            
+//            for object in objects {
+//                
+//                var user : PFUser = (object as? PFUser)!
+//                
+//                self.users.append(user.username!)
+//                
+//            }
+//        })
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,14 +51,7 @@ class UserTableViewController: UITableViewController {
         return 1
     }
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        let cell : UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
-        
-        cell.textLabel?.text = users[indexPath.row]
-
-        return cell
-    }
+   
 
 
     /*
