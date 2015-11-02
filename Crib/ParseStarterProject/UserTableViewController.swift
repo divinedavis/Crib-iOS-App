@@ -4,14 +4,13 @@
 //
 //  Created by Divine Davis on 10/20/15.
 //  Copyright © 2015 Parse. All rights reserved.
-//
 
 import Parse
 import UIKit
 
 class UserTableViewController: UITableViewController {
 
-    var users = [String]()
+    var users = [""]
     
     override func viewDidLoad() {
         
@@ -20,20 +19,23 @@ class UserTableViewController: UITableViewController {
         //Printing the currentUser name
         print(PFUser.currentUser()!)
         
-//        var query = PFUser.query()
-//        
-//        query?.findObjectsInBackgroundWithBlock({ (objects : [AnyObject]!, error : NSError!) -> Void in
-//            
-//            self.users.removeAll(keepCapacity : true)
-//            
-//            for object in objects {
-//                
-//                var user : PFUser = (object as? PFUser)!
-//                
-//                self.users.append(user.username!)
-//                
-//            }
-//        })
+        //Creating a query
+        let query = PFUser.query()
+        
+        query?.findObjectsInBackgroundWithBlock({ (objects : [PFObject]?, error : NSError?) -> Void in
+            
+            self.users.removeAll(keepCapacity : true)
+            
+            for object in objects! {
+                
+                let user : PFUser = (object as? PFUser)!
+                
+                self.users.append(user.username!)
+                
+            }
+            
+            self.tableView.reloadData()
+        })
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,6 +51,16 @@ class UserTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return 1
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell : UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
+       
+        cell.textLabel?.text = users[indexPath.row]
+        
+        return cell
+        
     }
 
    
