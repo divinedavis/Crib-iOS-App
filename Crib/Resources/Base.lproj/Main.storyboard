@@ -149,7 +149,7 @@
             </objects>
             <point key="canvasLocation" x="113" y="95"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Users-->
         <scene sceneID="Lbs-hu-gFx">
             <objects>
                 <tableViewController id="qJ3-47-nz5" customClass="UserTableViewController" customModule="Crib" customModuleProvider="target" sceneMemberID="viewController">
@@ -175,7 +175,7 @@
                             <outlet property="delegate" destination="qJ3-47-nz5" id="43O-Z2-HGU"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="wfx-vc-VHY"/>
+                    <navigationItem key="navigationItem" title="Users" id="wfx-vc-VHY"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="So9-vO-ehj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -192,13 +192,18 @@
                         <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ri0-f6-mgM">
+                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </toolbar>
                     <connections>
                         <segue destination="h32-ax-Zt9" kind="relationship" relationship="rootViewController" id="PAS-Cb-FOc"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pt7-IB-gM1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-419" y="95"/>
+            <point key="canvasLocation" x="-246" y="95"/>
         </scene>
     </scenes>
     <resources>

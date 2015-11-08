@@ -60,7 +60,7 @@ class UserTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell : UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
-       
+        
         cell.textLabel?.text = users[indexPath.row]
         
         return cell
