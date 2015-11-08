@@ -88,11 +88,11 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         
         if error != "" {
             
-            displayAlert("Error in the credentials you entered", error: error)
+            self.displayAlert("Error in the credentials you entered", error: error)
         
         } else {
             
-            let user = PFUser()
+            var user = PFUser()
             
             user.username = username.text
             user.password = password.text
@@ -134,7 +134,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
                         //Creating errorString
                         if let errorString = signupError?.userInfo["error"] as? NSString {
                         
-                            //Casting errorString as a Swift object again
+                            //Casting errorString as a Swift object
                             error = errorString as String
                         
                         } else {
