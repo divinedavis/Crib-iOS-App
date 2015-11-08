@@ -26,17 +26,21 @@ class UserTableViewController: UITableViewController {
             
             self.users.removeAll(keepCapacity : true)
             
-            for object in objects! {
+            if let objects = objects {
+                
+            
+            for object in objects {
                 
                 let user : PFUser = (object as? PFUser)!
                 
                 self.users.append(user.username!)
                 
             }
-            
+            }
             self.tableView.reloadData()
         })
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
