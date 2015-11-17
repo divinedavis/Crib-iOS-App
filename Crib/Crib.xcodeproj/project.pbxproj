@@ -97,6 +97,21 @@
 		81BA813C1A49DA1800E65899 = {
 			isa = PBXGroup;
 			children = (
+				81BA817A1A49E0E500E65899 /* SystemConfiguration.framework */,
+				81BA81781A49E0DB00E65899 /* AudioToolbox.framework */,
+				81BA81761A49E0D500E65899 /* libsqlite3.dylib */,
+				81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */,
+				166691471BC49D1B002B447F /* Security.framework */,
+				166691451BC49D14002B447F /* QuartzCore.framework */,
+				166691431BC49D0B002B447F /* MobileCoreServices.framework */,
+				166691411BC49CEA002B447F /* CFNetwork.framework */,
+				1666913F1BC49CE1002B447F /* CoreGraphics.framework */,
+				1666913D1BC49CD6002B447F /* CoreLocation.framework */,
+				81BA816B1A49DB6800E65899 /* Bolts.framework */,
+				81BA816C1A49DB6800E65899 /* Parse.framework */,
+				81BA816D1A49DB6800E65899 /* ParseCrashReporting.framework */,
+				81BA816E1A49DB6800E65899 /* ParseFacebookUtils.framework */,
+				81BA81801A49E10C00E65899 /* ParseUI.framework */,
 				81BA81471A49DA1800E65899 /* ParseStarterProject */,
 				814C3AC51B69877600E307BB /* Resources */,
 				81BA816A1A49DB5600E65899 /* Frameworks */,
@@ -127,17 +142,6 @@
 		81BA816A1A49DB5600E65899 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				166691471BC49D1B002B447F /* Security.framework */,
-				166691451BC49D14002B447F /* QuartzCore.framework */,
-				166691431BC49D0B002B447F /* MobileCoreServices.framework */,
-				166691411BC49CEA002B447F /* CFNetwork.framework */,
-				1666913F1BC49CE1002B447F /* CoreGraphics.framework */,
-				1666913D1BC49CD6002B447F /* CoreLocation.framework */,
-				81BA816B1A49DB6800E65899 /* Bolts.framework */,
-				81BA816C1A49DB6800E65899 /* Parse.framework */,
-				81BA816D1A49DB6800E65899 /* ParseCrashReporting.framework */,
-				81BA816E1A49DB6800E65899 /* ParseFacebookUtils.framework */,
-				81BA81801A49E10C00E65899 /* ParseUI.framework */,
 				81BA81751A49E0C500E65899 /* System Frameworks */,
 			);
 			name = Frameworks;
@@ -146,10 +150,6 @@
 		81BA81751A49E0C500E65899 /* System Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */,
-				81BA817A1A49E0E500E65899 /* SystemConfiguration.framework */,
-				81BA81781A49E0DB00E65899 /* AudioToolbox.framework */,
-				81BA81761A49E0D500E65899 /* libsqlite3.dylib */,
 			);
 			name = "System Frameworks";
 			sourceTree = "<group>";
